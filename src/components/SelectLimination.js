@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Loader from './Loader';
 const SelectLimination = ({
   step,
   setStep,
@@ -8,6 +8,7 @@ const SelectLimination = ({
   setSelectedColor,
 }) => {
   const [selectedTexture, setSelectedTexture] = useState(null);
+ 
 
   const handleImageClick = (texture) => {
     setSelectedTexture(texture);
@@ -40,6 +41,7 @@ const SelectLimination = ({
       title: "Wood Grains",
     },
   ];
+
 
   return (
     <div style={{ overflowY: "auto" }}>

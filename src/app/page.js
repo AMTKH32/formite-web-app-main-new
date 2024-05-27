@@ -22,7 +22,11 @@ export default function Home() {
     }, 500); // Change the progress interval time as needed
 
     return () => clearInterval(interval);
-  }, []);
+  },
+  
+  
+  []
+);
 
   return (
     <main className="min-h-screen h-auto w-full">
