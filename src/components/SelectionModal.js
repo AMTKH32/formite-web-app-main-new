@@ -86,25 +86,25 @@ export default function SelectionModal() {
   <section className="bg-gray-800 w-full px-32 py-8 flex justify-center items-center relative">
     <ol className="flex items-center justify-center w-full mb-4 sm:mb-5">
       <li className={`flex flex-col items-center w-1/4 text-red dark:text-red-600 ${step >= 1 ? 'after:content-[""] after:w-full after:h-2 after:border-b-2 after:border-red-600' : 'after:border-gray-100'} after:inline-block dark:after:border-red-600`}>
-        <div style={{ backgroundColor: "white" }} className={`flex items-center justify-center w-10 h-10 bg-${step >= 1 ? 'white' : 'gray'} rounded-full lg:h-12 lg:w-12 bg-${step >= 1 ? 'white' : 'gray'} shrink-0`} onClick={() => setStep(1)}>
+        <div style={{ backgroundColor: "white" }} className={`hover:cursor-pointer flex items-center justify-center w-10 h-10 bg-${step >= 1 ? 'white' : 'gray'} rounded-full lg:h-12 lg:w-12 bg-${step >= 1 ? 'white' : 'gray'} shrink-0`} onClick={() => setStep(1)}>
           <PiCameraFill className="w-4 h-4 text-red-600 lg:w-6 lg:h-6 dark:text-red-600" />
         </div>
         <span className="mt-2 text-center text-white">Choose Scene</span>
       </li>
       <li className={`flex flex-col items-center w-1/4 ${step >= 2 ? 'after:content-[""] after:w-full after:h-2 after:border-b-2 after:border-red-500' : 'after:border-red-600'} after:inline-block dark:after:border-red-600`}>
-        <div style={{ backgroundColor: "white" }} className={`flex items-center justify-center w-10 h-10 bg-${step >= 2 ? 'white' : 'gray'} rounded-full lg:h-12 lg:w-12 bg-${step >= 2 ? 'white' : 'gray'} shrink-0`} onClick={() => selectedRoom && setStep(2)}>
+        <div style={{ backgroundColor: "white" }} className={`flex hover:cursor-pointer  items-center justify-center w-10 h-10 bg-${step >= 2 ? 'white' : 'gray'} rounded-full lg:h-12 lg:w-12 bg-${step >= 2 ? 'white' : 'gray'} shrink-0`} onClick={() => selectedRoom && setStep(2)}>
           <SiMaterialdesignicons  className="w-4 h-4 text-red-600 lg:w-6 lg:h-6 dark:text-red-600" />
         </div>
         <span className="mt-2 text-center text-white">Choose Lamination</span>
       </li>
       <li className={`flex flex-col items-center w-1/4 ${step >= 3 ? 'after:content-[""] after:w-full after:h-2 after:border-b-2 after:border-red-500' : 'after:border-red-600'} after:inline-block dark:after:border-red-600`}>
-        <div style={{ backgroundColor: "white" }} className={`flex items-center justify-center w-10 h-10 bg-${step >= 3 ? 'white' : 'gray'} rounded-full lg:h-12 lg:w-12 bg-${step >= 3 ? 'white' : 'gray'} shrink-0`} onClick={() => selectedColor && setStep(3)}>
+        <div style={{ backgroundColor: "white" }} className={`flex hover:cursor-pointer  items-center justify-center w-10 h-10 bg-${step >= 3 ? 'white' : 'gray'} rounded-full lg:h-12 lg:w-12 bg-${step >= 3 ? 'white' : 'gray'} shrink-0`} onClick={() => selectedColor && setStep(3)}>
           <AiOutlineFileText className="w-4 h-4 text-red-600 lg:w-6 lg:h-6 dark:text-red-600" />
         </div>
         <span className="mt-2 text-center text-white">Choose Texture</span>
       </li>
       <li className={`flex flex-col items-center w-1/4 ${step >= 4 ? 'after:content-[""] after:w-full after:h-2 after:border-b-2 after:border-red-500' : 'after:border-red-600'} after:inline-block dark:after:border-red-600`}>
-        <div style={{ backgroundColor: "white" }} className={`flex items-center justify-center w-10 h-10 bg-${step >= 4 ? 'white' : 'gray'} rounded-full lg:h-12 lg:w-12 bg-${step >= 4 ? 'white' : 'gray'} shrink-0`} onClick={() => selectedColor && selectedRoom && setStep(4)}>
+        <div style={{ backgroundColor: "white" }} className={`flex hover:cursor-pointer  items-center justify-center w-10 h-10 bg-${step >= 4 ? 'white' : 'gray'} rounded-full lg:h-12 lg:w-12 bg-${step >= 4 ? 'white' : 'gray'} shrink-0`} onClick={() => selectedColor && selectedRoom && setStep(4)}>
           <AiOutlineCheck className="w-4 h-4 text-red-600 lg:w-6 lg:h-6 dark:text-red-600" />
         </div>
         <span className="mt-2 text-center text-white">Save</span>
